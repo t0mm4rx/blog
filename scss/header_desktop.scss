@@ -8,21 +8,42 @@ header {
   align-items: center;
   font-family: 'PT Mono';
 }
+
 header h2 {
   margin-left: 50px;
   font-size: 2em;
+  animation: anim 0.5s ease-in-out;
 }
+
 header a {
   text-decoration: none;
   color: $black;
 }
+
 .nav > a {
   font-weight: 700;
   margin: 30px;
 }
+
 .nav {
   margin-right: 50px;
 }
+
 #icon_menu {
   display: none;
+}
+
+#icon_close {
+  display: none;
+}
+@keyframes anim {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
