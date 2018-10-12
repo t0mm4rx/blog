@@ -1,0 +1,33 @@
+@import 'variables.scss';
+
+header {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'PT Mono';
+}
+header h2 {
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: $black;
+}
+.nav {
+  position: absolute;
+  left: -400px;
+}
+.nav > a {
+  font-weight: 700;
+  margin: 30px;
+}
+#icon_menu {
+  float: left;
+  width: auto;
+  margin: 10px;
+  font-size: 1.7em;
+}
