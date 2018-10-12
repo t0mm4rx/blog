@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"blog_post_desktop.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/blog_post_desktop.scss"],"names":[],"mappings":"AAAA,KACE,qBAGF,SACE,UACA,SACA,UAGF,OACE,WACA,YAGF,GACE,kBAGF,iBACE,gBACA,iBACA,mBAGF,SACE,SACA,gBAGF,GACE,gBACA,sBACA,eAGF,WACE,aAGF,MACE,aACA","file":"blog_post_desktop.css"}
