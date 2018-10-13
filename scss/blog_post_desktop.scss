@@ -1,11 +1,19 @@
+@import 'variables.scss';
+
 body {
   font-family: 'Roboto';
 }
 
 #content {
-  width: 60%;
+  width: 70%;
   margin: 0;
   padding: 0;
+}
+
+#post {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
 }
 
 #cover {
@@ -17,7 +25,7 @@ h1 {
   margin-bottom: 1vh;
 }
 
-p, span, h1, h3, pre {
+#content p, span, h1, h3, pre {
   margin-left: 3vw;
   margin-right: 3vw;
   text-align: justify;
@@ -36,9 +44,89 @@ h3 {
 
 h3::before {
   content: '# ';
+  color: $primary;
 }
 
 #date {
   margin-top: 0;
   font-weight: 200;
+}
+
+#sidebar {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  max-width: 30%;
+  padding: 30px;
+}
+
+#last_posts {
+  // background-color: $primary;
+  color: $black;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+#sidebar h2 {
+  font-family: 'PT Mono';
+  text-align: center;
+}
+
+.post_list_item {
+  width: auto;
+  text-decoration: none;
+  color: $black;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  transition: background-color .2s ease-in-out;
+}
+
+.post_list_item img {
+  width: auto;
+  height: 100%;
+}
+.post_list_item div {
+  padding: 0;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.post_list_item:hover {
+  background-color: #EEE;
+  transition: background-color .2s ease-in-out;
+}
+
+.post_list_item h4 {
+  margin-bottom: 0;
+}
+
+.post_list_item p {
+  margin-top: 0;
+}
+
+#categories {
+  background-color: $primary;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: justify;
+}
+
+#categories a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  font-family: 'PT Mono';
+  font-size: 1.1em;
+}
+
+#categories a:hover {
+  text-decoration: underline;
 }

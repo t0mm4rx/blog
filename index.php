@@ -18,8 +18,8 @@ if ($page == "blog_home") {
 <html lang="fr" dir="ltr">
   <head>
     <?php include_once('includes/head.php'); ?>
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="<?php echo $GLOBALS['url']; ?>css/<?php echo $GLOBALS['page']; ?>_desktop.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 799px)" href="<?php echo $GLOBALS['url']; ?>css/<?php echo $GLOBALS['page']; ?>_mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="<?php echo $GLOBALS['url']; ?>css/<?php echo $GLOBALS['page']; ?>_desktop.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="<?php echo $GLOBALS['url']; ?>css/<?php echo $GLOBALS['page']; ?>_mobile.css">
     <title>Tom Marx - blog d'informatique</title>
   </head>
   <body>

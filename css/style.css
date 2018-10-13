@@ -1,1 +1,1 @@
-body{margin:0;padding:0}.full_width{width:100%;text-align:center}/*# sourceMappingURL=style.css.map */
+body{margin:0;padding:0}.full_width{width:100%;max-width:100%;text-align:center}.full_width img{max-width:100%}.button{text-decoration:none;padding:10px;background-color:#176da4;margin:10px;color:#fff;display:inline-block;border-radius:3px;transition:background-color .1s ease-in-out}.button:hover{transition:background-color .1s ease-in-out;background-color:#0a324b}.button i{margin:10px}/*# sourceMappingURL=style.css.map */
