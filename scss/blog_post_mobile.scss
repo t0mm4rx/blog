@@ -1,10 +1,5 @@
 @import 'variables.scss';
 
-body {
-  font-family: 'Roboto';
-  max-width: 100%;
-}
-
 #content {
   width: 100%;
   margin: 0;
@@ -31,17 +26,6 @@ pre span {
   text-align: left;
 }
 
-h3 {
-  font-size: 1.6em;
-  font-family: 'PT Mono';
-  margin-top: 5vh;
-}
-
-h3::before {
-  content: '# ';
-  color: $primary;
-}
-
 #date {
   margin-top: 0;
   font-weight: 200;
@@ -54,7 +38,7 @@ h3::before {
   margin: 0;
   padding: 0;
   margin-top: 60px;
-  background-color: #EEE;
+  background-color: $grey;
 }
 
 #last_posts {
@@ -73,29 +57,7 @@ h3::before {
 }
 
 .post_list_item {
-  width: auto;
-  text-decoration: none;
-  color: $black;
-  display: flex;
-  align-items: center;
-}
-
-.post_list_item img {
-  width: auto;
-  height: 100%;
-}
-.post_list_item div {
-  padding: 0;
-  padding-left: 1vw;
-  padding-right: 1vw;
-}
-
-.post_list_item h4 {
-  margin-bottom: 0;
-}
-
-.post_list_item p {
-  margin-top: 0;
+  background-color: $grey;
 }
 
 #categories {

@@ -1,9 +1,5 @@
 @import 'variables.scss';
 
-body {
-  font-family: 'Roboto';
-}
-
 #content {
   width: 70%;
   margin: 0;
@@ -36,17 +32,6 @@ pre span {
   text-align: left;
 }
 
-h3 {
-  font-size: 1.6em;
-  font-family: 'PT Mono';
-  margin-top: 5vh;
-}
-
-h3::before {
-  content: '# ';
-  color: $primary;
-}
-
 #date {
   margin-top: 0;
   font-weight: 200;
@@ -74,59 +59,7 @@ h3::before {
   text-align: center;
 }
 
-.post_list_item {
-  width: auto;
-  text-decoration: none;
-  color: $black;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  transition: background-color .2s ease-in-out;
-}
-
-.post_list_item img {
-  width: auto;
-  height: 100%;
-}
-.post_list_item div {
-  padding: 0;
-  padding-left: 1vw;
-  padding-right: 1vw;
-}
-
 .post_list_item:hover {
-  background-color: #EEE;
+  background-color: $grey;
   transition: background-color .2s ease-in-out;
-}
-
-.post_list_item h4 {
-  margin-bottom: 0;
-}
-
-.post_list_item p {
-  margin-top: 0;
-}
-
-#categories {
-  background-color: $primary;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  padding: 10px;
-  text-align: justify;
-}
-
-#categories a {
-  text-decoration: none;
-  display: block;
-  color: white;
-  margin: 10px;
-  text-align: center;
-  font-family: 'PT Mono';
-  font-size: 1.1em;
-}
-
-#categories a:hover {
-  text-decoration: underline;
 }
