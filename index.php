@@ -1,18 +1,27 @@
 <?php
-$page = $_GET['page'];
-if ($page == "blog_home") {
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+include_once('fonctions.php');
+include_once('blog.php');
 
-} else if ($page == "blog_post") {
-
-} else if ($page == "blog_categories") {
-
-} else if ($page == "cv") {
-
-} else if ($page == "contact") {
-
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
 } else {
-  $page = "blog_home";
+    $page = 'blog_home';
 }
+
+if ($page == "blog_home") {
+} elseif ($page == "blog_post") {
+} elseif ($page == "blog_categories") {
+} elseif ($page == "cv") {
+} elseif ($page == "contact") {
+} else {
+    $page = "blog_home";
+}
+
+$blog = new Blog();
+var_dump($blog->get_last_posts()[0]->get_title());
 
 ?>
 
