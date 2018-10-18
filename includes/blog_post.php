@@ -27,6 +27,13 @@ if (a > b) {
 </div>
 
 <div id="sidebar">
+  <div id="categories">
+    <h2><i class="fas fa-list-ul"></i>  Catégories</h2>
+    <a href="/test/"># IA</a>
+    <a href="/test/"># 42</a>
+    <a href="/test/"># Développement Web</a>
+    <a href="/test/"># Hackintosh</a>
+  </div>
 <div id="last_posts">
   <h2><i class="fab fa-hotjar"></i>  Derniers articles</h2>
   <div class="post_list">
@@ -46,13 +53,6 @@ if (a > b) {
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
     </a>
   </div>
-</div>
-<div id="categories">
-  <h2><i class="fas fa-list-ul"></i>  Catégories</h2>
-  <a href="/test/"># IA</a>
-  <a href="/test/"># 42</a>
-  <a href="/test/"># Développement Web</a>
-  <a href="/test/"># Hackintosh</a>
 </div>
 </div>
 </section>
