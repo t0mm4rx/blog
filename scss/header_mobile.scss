@@ -11,15 +11,15 @@ header {
 
 header h2 {
   font-size: 2em;
-  width: 100%;
   text-align: center;
   animation: anim 0.5s ease-in-out;
 }
 
 header a {
+  display: block;
   text-decoration: none;
   color: $black;
-  width: 100%;
+  margin: auto;
 }
 
 .nav {

@@ -55,11 +55,15 @@ section a {
 .post h2 {
   margin: 0;
   text-align: left;
+  padding: 3vw;
+  padding-bottom: 0;
 }
 
 .post p {
   text-align: justify;
-  padding: 1vw;
+  padding-top: 0;
+  padding: 3vw;
+  margin-top: 0;
 }
 
 .post:hover {

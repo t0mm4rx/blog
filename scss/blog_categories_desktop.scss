@@ -22,12 +22,13 @@ section {
 }
 
 #left {
-  width: 80%;
+  width: 60%;
   padding: 1vw;
   padding-top: 0;
 }
 
 #right {
+  width: 40%;
   padding: 1vw;
   padding-top: 0;
 }
@@ -61,9 +62,14 @@ section a {
 .post p {
   text-align: justify;
   padding: 1vw;
+  margin-top: 0;
 }
 
 .post:hover {
   transition: transform .2s ease-in-out;
   transform: scale(1.05);
+}
+
+#categories {
+  margin-top: 90px;
 }

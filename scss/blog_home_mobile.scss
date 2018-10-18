@@ -26,11 +26,19 @@
   margin: 15px;
 }
 
+.post_list_item p {
+  text-align: justify;
+  margin-right: 10px;
+}
+
 a {
   color: black;
   text-decoration: none;
 }
 
 #right {
+  margin-bottom: 60px;
+}
+#left {
   margin-bottom: 60px;
 }
