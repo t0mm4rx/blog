@@ -4,6 +4,8 @@ if ($page == "blog_home") {
 
 } else if ($page == "blog_post") {
 
+} else if ($page == "blog_categories") {
+
 } else if ($page == "cv") {
 
 } else if ($page == "contact") {
@@ -26,6 +28,7 @@ if ($page == "blog_home") {
     <?php
     include_once('includes/header.php');
     include_once('includes/' . $page . '.php');
+    include_once('includes/footer.php');
     ?>
 
   </body>

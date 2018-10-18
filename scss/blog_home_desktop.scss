@@ -6,6 +6,7 @@
 
 #left {
   width: 70%;
+  order: -1;
 }
 
 #right {
@@ -15,4 +16,46 @@
 .post_list_item:hover {
   background-color: $grey;
   transition: background-color .2s ease-in-out;
+}
+
+#top {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+#top > p {
+  text-align: justify;
+  margin: 30px;
+  width: 50%;
+}
+
+.pinned_post {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  transition: background-color .2s ease-in-out;
+}
+
+.pinned_post:hover {
+  transition: background-color .2s ease-in-out;
+  background-color: $grey;
+}
+
+.pinned_post h2 {
+  margin: 0;
+  text-align: left;
+}
+
+.pinned_post p {
+  text-align: left;
+}
+
+.pinned_post div {
+  margin: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }

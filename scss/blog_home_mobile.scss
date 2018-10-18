@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+.pinned_post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: white;
+  transition: background-color .2s ease-in-out;
+  background-color: $grey;
+}
+.pinned_post img {
+  width: 100%;
+}
+.pinned_post h2 {
+  margin: 0;
+  text-align: left;
+}
+
+.pinned_post p {
+  text-align: left;
+}
+
+.pinned_post div {
+  margin: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#right {
+  margin-bottom: 60px;
+}

@@ -8,6 +8,7 @@
 
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="<?php echo $GLOBALS['url']; ?>css/header_desktop.css">
 <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="<?php echo $GLOBALS['url']; ?>css/header_mobile.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['url']; ?>css/footer.css">
 
 <script src="<?php echo $GLOBALS['url']; ?>js/highlight.pack.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['url']; ?>css/zenburn.css">
