@@ -5,6 +5,8 @@ error_reporting(E_ALL);
 include_once('fonctions.php');
 include_once('blog.php');
 
+$blog = new Blog();
+
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
@@ -13,15 +15,33 @@ if (isset($_GET['page'])) {
 
 if ($page == "blog_home") {
 } elseif ($page == "blog_post") {
+  if (isset($_GET['post'])) {
+    if ($blog->check_link($_GET['post'])) {
+      $post = $blog->get_post_by_link($_GET['post']);
+      if ($post === false) {
+        redirect_home();
+      }
+    } else {
+      redirect_home();
+    }
+  } else {
+    redirect_home();
+  }
 } elseif ($page == "blog_categories") {
+  if (isset($_GET['categorie'])) {
+    if ($blog->check_tag($_GET['categorie'])) {
+        $categorie = $_GET['categorie'];
+    } else {
+        redirect_home();
+    }
+  } else {
+    redirect_home();
+  }
 } elseif ($page == "cv") {
 } elseif ($page == "contact") {
 } else {
     $page = "blog_home";
 }
-
-$blog = new Blog();
-var_dump($blog->get_last_posts()[0]->get_title());
 
 ?>
 

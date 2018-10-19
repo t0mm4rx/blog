@@ -1,1 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
 
+RewriteRule cv/ index.php?page=cv [QSA]
+RewriteRule ^categories/(.*)/$ index.php?page=blog_categories&categorie=$1 [QSA]
+RewriteRule ^article/(.*)/$ index.php?page=blog_post&post=$1 [L,QSA]
