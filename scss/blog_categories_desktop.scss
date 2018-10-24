@@ -50,6 +50,7 @@ section a {
   color: $black;
   transition: transform .2s ease-in-out;
   transform: scale(1);
+  border-radius: 3px;
 }
 .post img {
   width: 100%;

@@ -18,7 +18,11 @@ body {
   max-width: 100%;
 }
 
-.button {
+a {
+  color: $primary;
+}
+
+.button2 {
   text-decoration: none;
   padding: 10px;
   background-color: $primary;
@@ -28,10 +32,26 @@ body {
   border-radius: 3px;
   transition: background-color .1s ease-in-out;
 }
+.button {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  // background-color: $primary;
+  margin: 10px;
+  font-weight: normal;
+  color: $primary;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all .1s ease-in-out;
+  border: 3px solid $primary;
+}
 
 .button:hover {
-  transition: background-color .1s ease-in-out;
-  background-color: darken($primary, 20);
+  transition: all .1s ease-in-out;
+  color: white;
+  background-color: $primary
 }
 
 .button i {
@@ -45,7 +65,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: $primary;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -88,6 +108,7 @@ h2 {
   align-items: center;
   background-color: white;
   transition: background-color .2s ease-in-out;
+  border-radius: 3px;
 }
 
 .post_list_item img {
@@ -116,6 +137,7 @@ h2 {
   margin-top: 30px;
   padding: 10px;
   text-align: justify;
+  border-radius: 3px;
 }
 
 #categories a {
