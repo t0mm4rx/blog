@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+*:focus {
+    outline: none;
+}
+
 .full_width {
   width: 100%;
   max-width: 100%;
@@ -46,6 +50,7 @@ a {
   border-radius: 3px;
   transition: all .1s ease-in-out;
   border: 3px solid $primary;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .button:hover {
@@ -152,4 +157,12 @@ h2 {
 
 #categories a:hover {
   text-decoration: underline;
+}
+
+.box {
+  width: 90%;
+  background-color: white;
+  margin: 30px;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
