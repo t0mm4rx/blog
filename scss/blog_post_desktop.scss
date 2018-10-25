@@ -15,7 +15,15 @@
 
 #cover {
   width: 100%;
+  max-width: 1000px;
   height: auto;
+  margin: auto;
+}
+
+#cover_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -23,10 +31,23 @@ h1 {
   font-size: 2em;
 }
 
-#content p, span, h1, h3, pre {
+#content {
   margin-left: 3vw;
   margin-right: 3vw;
   text-align: justify;
+  ul {
+    list-style-type: none;
+    li::before {
+      content: '>';
+      color: $primary;
+      font-weight: 700;
+      margin-left: -25px;
+      margin-right: 15px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 pre span {
@@ -66,4 +87,8 @@ pre span {
 .post_list_item:hover {
   background-color: $grey;
   transition: background-color .2s ease-in-out;
+}
+
+#disqus_thread {
+  margin-top: 150px;
 }

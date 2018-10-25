@@ -3,7 +3,7 @@
   <div class="post_list">
   <?php foreach ($blog->get_last_posts() as $key => $post) { ?>
     <a href="<?php echo $post->get_url(); ?>" class="post_list_item">
-      <img src="<?php echo $post->get_preview_image(); ?>" alt="" />
+      <img src="<?php echo $post->get_preview_image(); ?>" width="100px" height="100px" alt="" />
       <div><h4><?php echo $post->get_title(); ?></h4>
       <p><?php echo $post->get_preview(); ?></p></div>
     </a>
