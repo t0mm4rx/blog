@@ -1,5 +1,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<?php if ($page == 'blog_post') { ?>
+<meta name="description" content="<?php echo $post->get_full_preview(); ?>">
+<meta name="keywords" content="<?php echo join(', ', $post->get_tags()); ?>">
+<meta name="date" content="<?php echo $post->get_date(); ?>" scheme="DD/MM/YYYY">
+<?php } ?>
+
 <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -10,5 +17,5 @@
 <link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['url']; ?>css/footer.css">
 
 <script src="<?php echo $GLOBALS['url']; ?>js/highlight.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['url']; ?>css/zenburn.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $GLOBALS['url']; ?>css/ocean.css">
 <script>hljs.initHighlightingOnLoad();</script>

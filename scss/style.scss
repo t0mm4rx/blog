@@ -166,3 +166,17 @@ h2 {
   border-radius: 3px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
+ul {
+  list-style-type: none;
+  li::before {
+    content: '>';
+    color: $primary;
+    font-weight: 700;
+    margin-left: -25px;
+    margin-right: 15px;
+  }
+  li {
+    margin-bottom: 5px;
+  }
+}

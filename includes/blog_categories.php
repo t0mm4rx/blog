@@ -5,7 +5,7 @@
       <?php foreach ($blog->get_posts_by_tag($categorie) as $key => $p) { ?>
       <a href="<?php echo $p->get_url(); ?>">
         <div class="post">
-        <img src="<?php echo $p->get_image(); ?>" alt=""/>
+        <img src="<?php echo $p->get_image(); ?>" alt="<?php echo $p->get_title(); ?>"/>
         <h2><?php echo $p->get_title(); ?></h2>
         <p><?php echo $p->get_full_preview(); ?></p></div>
       </a>
