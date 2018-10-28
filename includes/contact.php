@@ -1,7 +1,7 @@
 <section id="contact">
 
   <div class="box" id="cadre">
-    <h1>Contactez-moi</h1>
+    <h1><i class="fas fa-at"></i> Contactez-moi</h1>
     <form id="contact_form">
       <div id="first_row">
         <input name="name" type='text' placeholder='Votre nom' />

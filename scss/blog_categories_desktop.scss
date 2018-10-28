@@ -51,6 +51,7 @@ section a {
   transition: transform .2s ease-in-out;
   transform: scale(1);
   border-radius: 3px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 .post img {
   width: 100%;
