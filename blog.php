@@ -98,8 +98,7 @@ class Blog
         $this->posts = [
         new Post('Introduction aux réseaux de neurones - Partie 1 : Théorie', 'Cet article vous permettera de comprendre comment un neurone artificiel fonctionne, et comment le machine learning permet de prédire des résultats en s\'appuyant sur des données d\'entrainement.', 'ia-partie-1', ['IA'], '10/10/2018', 15),
         new Post('Introduction aux réseaux de neurones - Partie 2 : Mise en pratique', 'Maintenant que vous comprenez le fonctionnement d\'un neurone, nous allons coder une classe python capable de résoudre des problèmes.', 'ia-partie-2', ['IA'], '13/10/2018', 15),
-        new Post('Mon expérience avec un Hackintosh', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'experience-hackintosh', ['Hackintosh'], '15/09/2018', 5),
-        new Post('Ecole 42, qu\'est ce que c\'est ?', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', '42-presentation', ['42'], '13/09/2018', 10)
+        new Post('Mon expérience avec un Hackintosh', 'Un Hackintosh, c\'est un PC qui fait tourner MacOS. Je vous explique pourquoi j\'ai fait ce choix et quelles contraintes cela apporte.', 'experience-hackintosh', ['Hackintosh'], '15/09/2018', 6)
       ];
     }
 

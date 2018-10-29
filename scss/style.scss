@@ -180,3 +180,40 @@ ul {
     margin-bottom: 5px;
   }
 }
+
+
+table {
+  width: 100%;
+  background-color: $grey;
+  border-radius: 3px;
+  border: 0;
+  padding: 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+tr {
+  padding: 0;
+  margin: 0;
+}
+
+tr:nth-child(odd) {
+  background-color: lighten($grey, 5);
+}
+
+th {
+  color: white;
+  padding: 15px;
+  border: 0;
+  margin: 0;
+}
+
+td {
+  margin: 0;
+  border: 0;
+  padding: 7px;
+}
+
+.table_header {
+  background-color: $primary !important;
+  font-family: 'PT Mono';
+}
