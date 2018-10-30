@@ -1,3 +1,4 @@
+<h1>Le blog</h1>
 <section id="top">
   <?php $p = $blog->get_pinned_post(); ?>
   <a href='<?php echo $p->get_url(); ?>'>

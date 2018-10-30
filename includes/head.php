@@ -4,18 +4,23 @@
 <meta name="description" content="<?php echo $post->get_full_preview(); ?>">
 <meta name="keywords" content="<?php echo join(', ', $post->get_tags()); ?>">
 <meta name="date" content="<?php echo $post->get_date(); ?>" scheme="DD/MM/YYYY">
+<link rel="canonical" href="https://tommarx.fr/article/<?php echo $post->get_link(); ?>/" />
 <?php } ?>
 <?php if ($page == 'blog_home') { ?>
 <meta name="description" content="Blog de Tom Marx, articles sur l'informatique, l'intelligence artificielle, le machine learning, les Hackintosh... Retrouvez mon CV.">
+<link rel="canonical" href="https://tommarx.fr/" />
 <?php } ?>
 <?php if ($page == 'blog_categories') { ?>
 <meta name="description" content="Tous les articles concernant '<?php echo $categorie; ?>' sur le blog de Tom Marx.">
+<link rel="canonical" href="https://tommarx.fr/categories/<?php echo $categorie; ?>/" />
 <?php } ?>
 <?php if ($page == 'cv') { ?>
 <meta name="description" content="CV de Tom Marx, développeur informatique à Lyon. Développement Web, appli mobiles, design... Retrouvez également mon expérience professionelle.">
+<link rel="canonical" href="https://tommarx.fr/cv/" />
 <?php } ?>
 <?php if ($page == 'contact') { ?>
 <meta name="description" content="Vous souhaitez me contacter ? Remplissez ce formulaire.">
+<link rel="canonical" href="https://tommarx.fr/contact/" />
 <?php } ?>
 <link rel="icon" type="image/png" href="<?php echo $GLOBALS['url']; ?>favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">

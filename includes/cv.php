@@ -1,5 +1,7 @@
 <section id="image">
-  <div id="header_overlay"></div>
+  <div id="header_overlay">
+    <h1>Tom Marx, développeur passionné</h1>
+  </div>
 </section>
 
 <section id="intro">
