@@ -59,6 +59,14 @@ a {
   background-color: $primary
 }
 
+.button[disabled] {
+  color: darken($grey, 25);
+  border-color: darken($grey, 25);
+}
+.button[disabled]:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .button i {
   margin: 10px;
 }
@@ -216,4 +224,20 @@ td {
 .table_header {
   background-color: $primary !important;
   font-family: 'PT Mono';
+}
+
+.c2a {
+  display: inline-block;
+  padding: 15px;
+  border: 0;
+  border-radius: 3px;
+  background-color: $grey;
+}
+
+.c2a_red {
+  background-color: lighten($red, 10);
+}
+
+.c2a_primary {
+  background-color: lighten($primary, 25);
 }

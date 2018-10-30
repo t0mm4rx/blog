@@ -6,7 +6,7 @@ if ($_SERVER['REMOTE_ADDR'] == "127.0.0.1" || $_SERVER['REMOTE_ADDR'] == "::1") 
 } else if (strpos($_SERVER['REMOTE_ADDR'], "192.168") !== false) {
     $GLOBALS["url"] = "http://192.168.0.6/blog/";
 } else {
-    $GLOBALS["url"] = "https://tommarx.free.fr/";
+    $GLOBALS["url"] = "https://tommarx.fr/";
     $GLOBALS['prod'] = true;
 }
 

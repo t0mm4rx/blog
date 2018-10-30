@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://tommarx.fr/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://tommarx.fr/cv/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tommarx.fr/contact/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tommarx.fr/article/ia-partie-1/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tommarx.fr/categories/IA/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tommarx.fr/categories/Hackintosh/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tommarx.fr/article/ia-partie-2/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tommarx.fr/article/experience-hackintosh/</loc>
+  <lastmod>2018-10-29T16:48:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

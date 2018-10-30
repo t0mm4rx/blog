@@ -51,7 +51,21 @@ if ($page == "blog_home") {
     <?php include_once('includes/head.php'); ?>
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="<?php echo $GLOBALS['url']; ?>css/<?php echo $GLOBALS['page']; ?>_desktop.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 999px)" href="<?php echo $GLOBALS['url']; ?>css/<?php echo $GLOBALS['page']; ?>_mobile.css">
+    <?php if ($page == 'blog_home') { ?>
     <title>Tom Marx - blog d'informatique</title>
+    <?php } ?>
+    <?php if ($page == 'blog_categories') { ?>
+    <title>Catégorie '<?php echo $categorie; ?>' - blog de Tom Marx</title>
+    <?php } ?>
+    <?php if ($page == 'blog_post') { ?>
+    <title><?php echo $post->get_title(); ?> - blog de Tom Marx</title>
+    <?php } ?>
+    <?php if ($page == 'cv') { ?>
+    <title>CV de Tom Marx, développeur de Lyon</title>
+    <?php } ?>
+    <?php if ($page == 'contact') { ?>
+    <title>Contactez-moi - blog de Tom Marx</title>
+    <?php } ?>
   </head>
   <body>
     <?php
