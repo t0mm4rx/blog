@@ -242,3 +242,7 @@ td {
 .c2a_primary {
   background-color: lighten($primary, 25);
 }
+
+input[type='text'], textarea {
+  border: .5px solid $grey !important;
+}

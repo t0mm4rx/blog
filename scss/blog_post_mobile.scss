@@ -90,3 +90,9 @@ pre span {
   margin-top: 150px;
   padding: 20px;
 }
+
+.image_caption {
+  margin-top: 0px;
+  color: lighten($black, 10);
+  font-style: italic;
+}
