@@ -38,12 +38,14 @@ header a {
 }
 
 .nav[open="false"] {
-  transform: translateX(-100%);
+  // transform: translateX(-100%);
+  left: -100%;
   transition: all 0.2s ease-in-out;
 }
 
 .nav[open="true"] {
-  transform: translateX(0%);
+  // transform: translateX(0%);
+  left: 100%;
   transition: all 0.2s ease-in-out;
 }
 
