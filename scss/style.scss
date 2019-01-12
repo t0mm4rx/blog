@@ -71,7 +71,7 @@ a {
   margin: 10px;
 }
 
-.underline:before {
+.underline:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -86,7 +86,7 @@ a {
   transition: all 0.1s ease-in-out 0s;
 }
 
-.underline:hover:before {
+.underline:hover:after {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
