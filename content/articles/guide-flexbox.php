@@ -1,5 +1,5 @@
 <p>
-  Depuis CSS3, les développeurs web peuvent utiliser la propriété 'Flexbox' dans leur CSS. Aujourd'hui, selon le site <a target="_blank" href="https://caniuse.com" rel="Ce site liste différentes propriétés CSS et leur adoptions par les différents navigateurs et systèmes d'exploitation.">Can I Use ?</a>, 95,5% des navigateurs supportent Flexbox.
+  Depuis CSS3, les développeurs web peuvent utiliser la propriété 'Flexbox' dans leur CSS. Aujourd'hui, selon le site <a target="_blank" href="https://caniuse.com/#feat=flexbox" rel="Ce site liste différentes propriétés CSS et leur adoptions par les différents navigateurs et systèmes d'exploitation.">Can I Use ?</a>, 95,5% des navigateurs supportent Flexbox.
   Ce module, couplé avec les grilles CSS, dont nous verrons l'utilité dans un prochain article, parraît tellement simple d'utilisation qu'on imagine difficilement qu'il ne devienne pas la norme d'ici quelques années dans la création de layouts web.
 </p>
 
