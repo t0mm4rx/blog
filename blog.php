@@ -99,7 +99,8 @@ class Blog
         new Post('Introduction aux réseaux de neurones - Partie 1 : Théorie', 'Cet article vous permettera de comprendre comment un neurone artificiel fonctionne, et comment le machine learning permet de prédire des résultats en s\'appuyant sur des données d\'entrainement.', 'ia-partie-1', ['IA'], '10/10/2018', 15),
         new Post('Introduction aux réseaux de neurones - Partie 2 : Mise en pratique', 'Maintenant que vous comprenez le fonctionnement d\'un neurone, nous allons coder une classe python capable de résoudre des problèmes.', 'ia-partie-2', ['IA'], '13/10/2018', 15),
         new Post('Mon expérience avec un Hackintosh', 'Un Hackintosh, c\'est un PC qui fait tourner MacOS. Je vous explique pourquoi j\'ai fait ce choix et quelles contraintes cela apporte.', 'experience-hackintosh', ['Hackintosh'], '15/09/2018', 6),
-        new Post('Simplifiez le design web avec Flexbox', 'Le CSS permet depuis quelques années d\'utiliser des layouts Flexbox, qui vous permettrons de concrétiser vos maquettes web très facilement.', 'guide-flexbox', ['Web'], '27/12/2018', 15)
+        new Post('Simplifiez le design web avec Flexbox', 'Le CSS permet depuis quelques années d\'utiliser des layouts Flexbox, qui vous permettrons de concrétiser vos maquettes web très facilement.', 'guide-flexbox', ['Web'], '27/12/2018', 15),
+        new Post('Générateur d\'art procédural', 'Pésentation d\'un petit projet réalisé en javascript avec p5.js, qui génère des dessins aléatoires.', 'art-procedural', ['Web'], '08/02/2019', 5)
       ];
     }
 
