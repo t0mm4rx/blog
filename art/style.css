@@ -11,11 +11,11 @@ body, html {
 
 #config {
   position: absolute;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, .4);
   padding: 30px;
   top: 50%;
   left: 50%;
-  max-width: 500px;
+  max-width: 600px;
   transform: translate(-50%, -50%);
 }
 
@@ -27,7 +27,7 @@ body, html {
 
 #config_params{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr auto;
   grid-column-gap: 10px;
   grid-row-gap: 5px;
   width: 100%;
@@ -37,4 +37,32 @@ body, html {
   max-width: 50px;
   border: 0;
   padding: 5px;
+}
+
+#buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+button {
+  font-family: 'PT Mono';
+  background-color: rgba(122, 122, 122, .5);
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .1s;
+  margin: 3px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#helper {
+  position: fixed;
+  display: none;
 }

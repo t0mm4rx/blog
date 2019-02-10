@@ -1,5 +1,6 @@
 var open = true
 var obj = document.getElementById('config')
+var helper = document.getElementById('helper')
 
 var o_color = document.getElementById('color')
 var o_position = document.getElementById('position')
@@ -17,14 +18,7 @@ function keypressed(k)
 {
   if (k == "c")
   {
-    open = !open
-    if (open)
-    {
-      obj.style.display = "block"
-    } else
-    {
-      obj.style.display = "none"
-    }
+    togglePanel()
   }
 
   if (k=="r")
@@ -39,4 +33,18 @@ function isNumberKey(evt)
    if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode != 46 && charCode != 45)
       return false
    return true
+}
+
+function togglePanel()
+{
+  open = !open
+  if (open)
+  {
+    obj.style.display = "block"
+    helper.style.display = "none"
+  } else
+  {
+    obj.style.display = "none"
+    helper.style.display = "block"
+  }
 }

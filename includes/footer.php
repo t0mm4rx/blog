@@ -4,5 +4,5 @@
   <div class="link_social"><a href="https://t0m.itch.io/" target="_blank"><i class="fas fa-gamepad"></i></a></div>
   <div class="link_social"><a href="https://dribbble.com/JumpingTom" target="_blank"><i class="fab fa-dribbble"></i></a></div>
 </div>
-<p>Copyright Tom Marx - 2018</p>
+<p>Copyright Tom Marx - 2019</p>
 </footer>

@@ -8,49 +8,59 @@
   </head>
   <body>
 
+    <div id="helper">
+    <button onclick="togglePanel()">Configuration pannel (c)</button>
+    </div>
+
     <div id="config">
 
-      <h3>Parameters (press c to show/hide)</h3>
+      <h3>Parameters</h3>
       <p>
         <b>Press r</b> to generate a new canvas.<br/>
-        You can right click > save image as to save your creation.<br />
-        Warning with N parameter, too much can crash your navigator !
+        <b>Press c</b> to hide/show this panel.<br/>
+        You can right click on background > 'save image as' to save your creation.
       </p>
 
         <div id="config_params">
 
-          <span>Color delta</span>
+          <span>Color variation</span>
           <input type="range" min="0" max="30" value="6" step="0.1" oninput="o_color.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="6" id="color" />
 
-          <span>Position delta</span>
+          <span>Position variation</span>
           <input type="range" min="0" max="200" value="50" step="0.1" oninput="o_position.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="50" id="position" />
 
-          <span>Radius</span>
+          <span>Radius of circles</span>
           <input type="range" min="0" max="500" value="100" step="0.1" oninput="o_radius.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="100" id="radius" />
 
-          <span>Speed delta</span>
+          <span>Speed of animation</span>
           <input type="range" min="0" max="30" value="4" step="0.01" oninput="o_speed.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="4" id="speed" />
 
-          <span>N</span>
+          <span>Number of circles</span>
           <input type="range" min="0" max="10000" value="500" step="1" oninput="o_n.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="500" id="n" />
 
-          <span>Min Alpha</span>
+          <span>Minimal opacity</span>
           <input type="range" min="0" max="255" value="200" step="1" oninput="o_min_alpha.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="200" id="min_alpha" />
 
-          <span>Alpha delta</span>
-          <input type="range" min="-255" max="255" value="100" step="1" oninput="o_alpha.value=this.value" />
+          <span>Maximal opacity</span>
+          <input type="range" min="0" max="255" value="100" step="1" oninput="o_alpha.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="100" id="alpha" />
 
-          <span>Background light</span>
+          <span>Background brightness</span>
           <input type="range" min="-255" max="255" value="100" step="1" oninput="o_light.value=this.value" />
           <input type="text" onkeypress="return isNumberKey(event)" value="100" id="light" />
 
+        </div>
+
+        <div id="buttons">
+          <button onclick="init()">Generate a new canvas (r)</button>
+          <button onclick="togglePanel()">Hide this panel (c)</button>
+          <button onclick="location.reload()">Back to default</button>
         </div>
 
     </div>
