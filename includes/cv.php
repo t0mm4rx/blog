@@ -17,7 +17,7 @@ Aujourd'hui, je réalise des sites internets, des applications mobiles, ou diff�
     <div id="skills_list">
       <div class="skill">
         <h3><i class="fas fa-desktop"></i> Web</h3>
-        <p>Je maîtrise l'HTML, le CSS et le JS pour créer des sites de A à Z. Je peux utiliser des outils comme SASS, angular ou encore Bootstrap. Je me sers également de Git ce qui me permet de travailler de manière efficace avec un groupe. Je peux aussi intégrer des maquettes graphiques, et utiliser des CMS comme Wordpress ou CMSMadeSimple.</p>
+        <p>Je maîtrise l'HTML, le CSS et le JS pour créer des sites de A à Z. Je peux utiliser des outils comme SASS, Angular ou encore Bootstrap. Je me sers également de Git ce qui me permet de travailler de manière efficace avec un groupe. Je peux aussi intégrer des maquettes graphiques, et utiliser des CMS comme Wordpress ou CMSMadeSimple.</p>
       </div>
       <div class="skill">
         <h3><i class="fas fa-gamepad"></i> Jeux vidéos</h3>

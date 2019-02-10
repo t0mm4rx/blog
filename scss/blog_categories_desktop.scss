@@ -14,6 +14,7 @@ section {
   padding: 3vw;
   padding-top: 0;
   display: flex;
+  background-color: $grey;
 }
 
 .post_list_item:hover {
@@ -46,7 +47,7 @@ section a {
   margin-bottom: 30px;
   background-color: white;
   transition: background-color .2s ease-in-out;
-  background-color: $grey;
+  background-color: white;
   color: $black;
   transition: transform .2s ease-in-out;
   transform: scale(1);
@@ -58,7 +59,7 @@ section a {
 }
 .post h2 {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: left;
 }
 

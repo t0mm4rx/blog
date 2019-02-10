@@ -118,10 +118,12 @@ h2 {
   text-decoration: none;
   color: $black;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
   transition: background-color .2s ease-in-out;
-  border-radius: 3px;
+  max-height: 100px;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
 }
 
 .post_list_item img {
@@ -136,6 +138,7 @@ h2 {
 
 .post_list_item h4 {
   margin-bottom: 0;
+  margin-top: 8px;
 }
 
 .post_list_item p {

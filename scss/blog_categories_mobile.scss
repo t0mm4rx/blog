@@ -11,7 +11,8 @@ h1::before {
 }
 
 section {
-  padding-top: 0;
+  padding-top: 15px;
+  background-color: $grey;
 }
 
 .post_list_item:hover {
@@ -44,7 +45,7 @@ section a {
   margin-bottom: 30px;
   background-color: white;
   transition: background-color .2s ease-in-out;
-  background-color: $grey;
+  background-color: white;
   color: $black;
   transition: transform .2s ease-in-out;
   transform: scale(1);
