@@ -102,7 +102,8 @@ class Blog
         new Post('Simplifiez le design web avec Flexbox', 'Le CSS permet depuis quelques années d\'utiliser des layouts Flexbox, qui vous permettrons de concrétiser vos maquettes web très facilement.', 'guide-flexbox', ['Web'], '27/12/2018', 15),
         new Post('Générateur d\'art procédural', 'Pésentation d\'un petit projet réalisé en javascript avec p5.js, qui génère des dessins aléatoires.', 'art-procedural', ['Web'], '08/02/2019', 5),
         new Post('EmojiNN', 'Tensorflow.js permet de créer, d\'entrainer, et d\'utiliser un modèle de réseau de neurones directement depuis le navigateur.', 'emojis', ['IA', 'Web'], '13/02/2019', 5),
-        new Post('Contrôler un instrument de musique avec votre webcam', 'Apprenez à créer un instrument de musique contrôlable avec les mouvements de votre corps.', 'webcam-musique', ['Web'], '05/03/2019', 15)
+        new Post('Contrôler un instrument de musique avec votre webcam', 'Apprenez à créer un instrument de musique contrôlable avec les mouvements de votre corps.', 'webcam-musique', ['Web'], '05/03/2019', 15),
+        new Post('Calculez PI avec la méthode de Monte Carlo', 'Calculer la valeur de PI à partir de nombres aléatoires, d\'un carré, et d\'un cercle.', 'pi', ['Web'], '16/03/2019', 10)
       ];
     }
 
