@@ -38,6 +38,7 @@
 <div id="sidebar">
   <?php include_once('includes/categories.php'); ?>
   <?php include_once('includes/last_posts.php'); ?>
+  <?php include_once('includes/tweets.php'); ?>
 </div>
 </section>
 
