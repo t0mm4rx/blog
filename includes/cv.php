@@ -36,8 +36,9 @@ Aujourd'hui, je réalise des sites internets, des applications mobiles, ou diff�
         <p>Un terminal de commande m'est familier. Je maîtrise les principales fonctionnalités de Linux, comme la sécurisation des accès ou la gestion des dépendances. J'ai des notions de sécurité simples, comme l'escalade de privilège ou les dépassements de tampons.</p>
       </div>
       <div class="skill">
-        <h3><i class="fas fa-database"></i> Gestion de données</h3>
-        <p>Je peux traiter de larges ensembles de données automatiquement, les stocker en base. Je maîtrise la création de crawlers web en PHP ou NodeJS. J'ai développé des API assurant la sécurisation de mots de passe et la sécurisation de bases de données. Je connais bien MySQL, et les principales menaces qui le vise.</p>
+        <h3><i class="fas fa-database"></i> Intelligence artificielle</h3>
+        <p>Diplômé du MOOC de Stanford, je maîtrise et comprend les principaux domaines du machine learning : apprentissage supervisé, non-supervisé et détection d'anomalie. J'ai une compréhension suffisante des réseaux de neurones pour en implémenter de zéro. Je sais utiliser
+        Tensorflow et Keras pour créer et entraîner des modèles.</p>
       </div>
     </div>
   </div>
@@ -46,6 +47,26 @@ Aujourd'hui, je réalise des sites internets, des applications mobiles, ou diff�
 <section id="experience">
   <h2>Éxpérience</h2>
   <div id="timeline">
+
+      <div class="timeline_left">
+        <span>Avril 2019</span>
+        <div class="separator_down"></div>
+      </div>
+      <div class="timeline_right"><h3>Diplômé du MOOC de Stanford</h3>
+        <p>Ce MOOC basé sur l'intelligence artificielle et le machine learning a une durée d'un trimestre (70 heures de cours), et se valide via 10 quizzes d'environ 20 minutes et de 9 exercices de programmation d'une durée variable. Je maîtrise désormais les bases de l'apprentissage supervisé, non-supervisé, ainsi que de différents algorithmes de traitement de données. Ce cours
+        m'a également permis d'acquérir une vision d'ensemble sur l'apprentissage machine.</p>
+        <a class="button" target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/XED748MQKEBC">Certificat<i class="fas fa-external-link-alt"></i></a></p>
+      </div>
+
+      <div class="timeline_left">
+        <span>Mars 2019</span>
+        <div class="separator_down"></div>
+      </div>
+      <div class="timeline_right"><h3>Réalisation du site cabinetjlavocat.fr</h3>
+        <p>Réalisation d'un site vitrine pour le cabinet d'avocat parisien JLAvocat. Ce projet utilise Wordpress.</p>
+          <a class="button" target="_blank" href="http://cabinetjlavocat.fr/">Lien<i class="fas fa-external-link-alt"></i></a></p>
+        </div>
+
       <div class="timeline_left">
         <span>Août 2018</span>
         <div class="separator_down"></div>
