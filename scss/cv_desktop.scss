@@ -81,7 +81,6 @@ h1 {
 }
 
 .skill:hover {
-  transition: all .2s ease-in-out;
   background-color: lighten($grey, 5);
   transform: scale(1.05);
 }

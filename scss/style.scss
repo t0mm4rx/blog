@@ -255,3 +255,50 @@ input[type='text'], textarea {
   margin-top: 20px;
   text-align: center;
 }
+
+#last_posts {
+  background-color: white;
+  padding-top: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+}
+
+#post_list {
+  max-height: 100%;
+}
+
+#last_posts p {
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+#sketches_list {
+  margin-top: 60px;
+}
+
+.sketch_item {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: background-color .1s ease-in-out;
+}
+
+.sketch_item:hover {
+  background-color: $grey;
+}
+
+.sketch_item iframe {
+  width: 100%;
+  min-height: 800px;
+  margin-top: 10px;
+  height: auto;
+  border: none;
+  display: none;
+}
+
+.sketch_item_open iframe {
+  display: block !important;
+}

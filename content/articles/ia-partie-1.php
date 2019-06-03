@@ -17,11 +17,11 @@
   <li>Détecter une maladie en se basant sur des critères comme l'activité de la personne, son alimentation</li>
 </ul>
 <p>
-  Dans tous ces cas, le réseau prend en entrée des données, et sort une nouvelle valeur.
+  Dans tous ces cas, le réseau prend en entrée des données, et sort des nouvelles valeurs.
 </p>
 
 <p>
-  Mais comment le réseau peut-il "deviner" la valeur attendue ? C'est là qu'intervient le <b>machine learning</b>. Il faut entrainer le réseau avec des milliers voir des millions de cas déjà résolus.<br />
+  Mais comment le réseau peut-il "deviner" la valeur attendue ? C'est là qu'intervient l'aspect <b>machine learning</b>. Il faut entrainer le réseau avec des milliers voir des millions de cas déjà résolus selon la complexité du problème.<br />
   Reprenons l'exemple du spam : votre messagerie doit détecter si un mail reçu est un spam ou non. Il va constituer une base de données de mails spam signalés par les utilisateurs. Grâce à cette base de mails spam il peut entrainer son réseau de neurones à détecter de nouveaux cas inconnus. <b>Un réseau de neurones crée une règle générale à partir de données existantes afin de pouvoir appliquer cette règle à de nouveaux cas</b>.
 </p>
 
@@ -56,11 +56,11 @@
     <br />
     `S = sum(Wi * X i)`
     <br />
-    On ajoute ensuite le <b>bias</b>, noté `\beta`, une nouvelle valeur qui ne dépend d'aucune entrée dont vous comprendrez l'utilitée lors de la mise en pratique. C'est une valeur qui a le même rôle qu'une entrée classique, elle nous permettera de résoudre certains problèmes.
+    On ajoute ensuite le <b>bias</b>, noté `\beta`, une nouvelle valeur qui ne dépend d'aucune entrée dont vous comprendrez l'utilitée lors de la mise en pratique. C'est une valeur qui a le même rôle qu'une entrée classique, elle nous permettera de résoudre certains problèmes. Pour simplifier, <b>le bias est une entrée activée en permanence</b>.
     <br />
     `S = sum(Wi * X i) + \beta`
   </li>
-  <li>On passe ensuite cette somme dans une <b>fonction d'activation</b>. C'est simplement une fonction qui va normaliser notre somme entre 0 et 1. Une des fonctions les plus utilisées est la fonction sigmoïd :
+  <li>On passe ensuite cette somme dans une <b>fonction d'activation</b>. Cette fonction va restreindre la somme obtenue dans un interval donné. Il existe de très nombreuses fonctions d'activations, vous pouvez même en définir vous même. La fonction doit juste avoir une dérivée connue. Une des fonctions les plus utilisées est la fonction sigmoïd, et elle va nous être utile car elle restreint le résultat entre 0 et 1, c'est ce qu'on veut dans notre exemple :
   <br />
   `sig(x) = 1 / (1 + e^-x)`
   <br />
@@ -68,15 +68,9 @@
   <div class="full_width">
     <img src="<?php echo $GLOBALS['url']; ?>content/articles/ia-partie-1/sig.jpg" alt="Schéma du fonctionement d'un neurone"/>
   </div>
-  On pourra également utiliser la fonction signe quand on voudra une sortie strictement binaire.
-  <br />
-  `x >= 0 -> 1`
-  <br />
-  `x < 0 -> 0`
-  </li>
 </ul>
 <p>
-  Résumons toutes les grandeurs composants un neurone :
+  Résumons tous les composants d'un neurone artificiel :
 </p>
 <ul>
   <li>Une liste d'entrées `X`</li>
@@ -84,6 +78,9 @@
   <li>Un bias `\beta`</li>
   <li>Une fonction d'activation, généralement sigmoïd ou signe</li>
 </ul>
+<p>
+  Pour <b>effectuer une prédiction</b>, le neurone multiplie chaque entrée par son poid respectif, ajoute le bias lui aussi multiplié par son poid. Il additionne toutes ces valeurs, et passe la somme par une fonction d'activation.
+</p>
 <h3>L'apprentissage du neurone</h3>
 <p>
   Nous allons maintenant aborder une partie cruciale dans le fonctionnement d'un réseau de neurones : l'apprentissage. Le machine learning consiste à donner une grande quantité d'exemples issus d'un <b>dataset</b>, un large ensemble de données, afin de trouver les poids qui donne un résultat le plus juste possible. Autrement dit, <b>il faut minimiser l'erreur d'un neurone</b>. Pour chaque donnée d'entrainement, le neurone va ajuster ses poids pour se rapprocher du résultat attendu. Voici le procédé d'apprentissage :
@@ -104,7 +101,6 @@
     <br />
     On ne peut malheureusement pas s'arréter à ce calcul, nous avons besoin de diminuer la correction apportée : je vous avais dit que le machine learning consistait à tourner des boutons jusqu'à ce qu'il nous donne un résultat convaincant. Ici nos boutons ce sont les poids, qu'il faut ajuster pour trouver les prédictions les plus justes possible. Imaginez qu'à chaque erreur vous tourniez le bouton d'un demi-tour. Vous n'arriverez jamais au bon réglage car vous manqueriez de précision. Ici c'est pareil, on multiplie la correction par un <b>learning rate</b>, qu'on définira ici à 0,1. Le learning rate c'est la précision avec laquelle vous ajustez vos poids.<br />
     `Wi = Wi + "Xi" * E * "learning rate"`<br />
-    Il est important de préciser qu'il existe différents type de régressions, la plus simple étant la linéaire mais il en existe d'autres comme la régression logistique. La régression linéaire nous suffira largement.
   </li>
   <li>
     Maintenant que nos poids sont corrigés, on corrige le bias, la valeur supplémentaire, de la même manière que les poids. Seulement il n'est associé à aucune entrée, donc on lui ajoute seulement l'erreur multipliée par le learning rate :

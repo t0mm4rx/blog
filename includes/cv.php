@@ -49,6 +49,14 @@ Aujourd'hui, je réalise des sites internets, des applications mobiles, ou diff�
   <div id="timeline">
 
       <div class="timeline_left">
+        <span>Juin 2019</span>
+        <div class="separator_down"></div>
+      </div>
+      <div class="timeline_right"><h3>Finaliste Prologin</h3>
+        <p>Après avoir passé les qualifications en ligne et les demi-finales, je termine 50ème sur 100 participants de la finale nationale de Prologin. Prologin est les premier concours d'informatique en France, organisé par Epita et Polytechnique. La finale consiste à créer une intelligence artificielle qui joue à un jeu crée pour l'occasion. Un tournoi faisant jouer les IA les unes contre les autres et ensuite organisé, et permet de déterminer un classement individuel.</p>
+      </div>
+
+      <div class="timeline_left">
         <span>Avril 2019</span>
         <div class="separator_down"></div>
       </div>

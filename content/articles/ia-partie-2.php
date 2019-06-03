@@ -1,7 +1,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 <h3>Introduction</h3>
 <p>
-  Dans cette deuxième partie, nous allons coder un neurone en se basant sur la théorie vue dans l'article précédent. Le code en example sera en Python, mais vous pouvez très bien le faire dans votre langage favori. Pour cette partie vous aurez donc besoin d'une compréhension minimale de la programmation. Touts les fichiers sont disponibles en téléchargement à la fin de l'article.<br />
+  Dans cette deuxième partie, nous allons coder un neurone en se basant sur la théorie vue dans l'article précédent. Le code en example sera en Python, mais vous pouvez très bien le faire dans votre langage favori. Pour cette partie vous aurez donc besoin d'une compréhension minimale de la programmation. Tous les fichiers sont disponibles en téléchargement à la fin de l'article.<br />
   Nous allons résoudre un problème simple : on nous donne la masse et le diamètre d'un fruit, et l'on doit déterminer si ce fruit est une pomme ou un citron.<br />
   Nous disposons du dataset suivante :
 </p>
@@ -45,7 +45,7 @@ class Neuron:
 <h3>La fonction de prédiction</h3>
 <p>
   Maintenant que toutes nos propriétés sont définies est initialisées, on peut créer une méthode 'guess', qui prend en entrée un tableau de valeur, les inputs, et qui retourne la prédiction.
-  Pour réaliser cette fonction on a besoin de définir notre fonction d'activation. L'algorithme que nous faisons est un <b>classificateur</b>, ses valeurs de sorties sont soit pomme soit citron. Notre fonction d'activation doit donc renvoyer soit 1, soit 0. Pour cela, nous allons utiliser une fonction qui renvoi 1 si `x >= 0`, 0 si `x < 0` :
+  Pour réaliser cette fonction on a besoin de définir notre fonction d'activation. L'algorithme que nous faisons est un <b>classificateur linéaire</b>, ses valeurs de sorties sont soit pomme soit citron. Notre fonction d'activation doit donc renvoyer soit 1, soit 0. Pour cela, nous allons utiliser une fonction qui renvoi 1 si `x >= 0`, 0 si `x < 0` :
 </p>
 <pre><code class="python"># Fonction d'activation, x: float
 def activate(self, x):
@@ -223,6 +223,8 @@ Entrainement terminé
 </div>
 <p>
   Dans ce cas, il est impossible de séparer les classes avec une seule droite, il faudra donc plus d'un neurone.
+  Pour résumer, un réseau de neurones et un <b>approximateur de fonction</b>. Plus sa taille est grande, plus il pourra trouver des fonctions complexes.<br />
+  Un réseau de neurones prend des entrées et des sorties numériques, et trouve la relation mathématique qui les lient.
 </p>
 <h3>Conclusion</h3>
 <p>
