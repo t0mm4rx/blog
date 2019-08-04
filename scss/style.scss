@@ -302,3 +302,10 @@ input[type='text'], textarea {
 .sketch_item_open iframe {
   display: block !important;
 }
+
+blockquote {
+    background-color: $grey;
+    padding: 20px;
+    font-style: italic;
+    border-left: 5px solid $primary;
+}
